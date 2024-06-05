@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  :root {
+    --redC: rgb(229, 9, 20);
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .main-background {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+  }
+  
+  .background-img img {
+    width: max(100vw, 300px);
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  .black-back {
+    width: max(100vw, 300px);
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    box-shadow: 48px 48px 700px inset;
+  }
+  
+  .contains_ele {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 700px;
+  }
+  
+  .nav {
+    width: 78vw;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .netflix-logo {
+    height: 40px;
+  }
+  
+  .but_sign-in {
+    width: 76px;
+    height: 32px;
+  }
+  
+  .but {
+    border-radius: 4px;
+    color: white;
+    background-color: var(--redC);
+    border: none;
+  }
+  
+  .but:hover {
+    background-color: rgb(202, 8, 17);
+    cursor: pointer;
+  }
+  
+  .introduction {
+    width: 100vw;
+    height: 612px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .introduction > div:nth-child(1) {
+    font-size: 48px;
+    padding: 10px 20px;
+    font-weight: 900;
+  }
+  
+  .introduction div:nth-child(2) {
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+  
+  .introduction div:nth-child(3) {
+    padding: 0px 20px;
+    margin-top: 10px;
+  }
+  
+  .email-space > div:first-child {
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  
+  .email-space {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .get-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+  
+  .input-email {
+    width: 338px;
+    height: 54px;
+    background-color: rgba(41, 41, 41, 0.5);
+    padding: 0px 18px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .input-email::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+  }
+  
+  .get-started {
+    height: 56px;
+    font-size: 24px;
+    width: 203px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sections {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section {
+    width: 80vw;
+    height: 588px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .section3 {
+    height: 400px;
+  }
+  
+  .separation {
+    width: max(100vw, 200px);
+    height: 8px;
+    background-color: rgba(128, 128, 128, 0.3);
+  }
+  
+  .sec-disc {
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sec-disc div:first-child {
+    font-size: 48px;
+    font-weight: 900;
+  }
+  
+  .sec1-media {
+    display: flex;
+    position: relative;
+  }
+  
+  .sec1-media img {
+    z-index: 1;
+  }
+  
+  .sec1-media > video {
+    position: absolute;
+    top: 97px;
+    left: 78px;
+  }
+  
+  .sec2-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sec2-media > img {
+    height: 450px;
+  }
+  
+  .card {
+    width: 80%;
+    height: 104px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 100px;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .card-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .card-logo > .logo-card > img {
+    height: 80px;
+  }
+  
+  .disc-card span:first-child {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .disc-card {
+    color: #0071eb;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .download-icon img {
+    height: 60px;
+  }
+  
+  .FAQ {
+    height: 934px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .FAQ > span {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .question {
+    height: 36px;
+    cursor: pointer;
+    width: 74vw;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+  }
+  
+  .question:hover {
+    background-color: rgb(63, 63, 63);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  footer {
+    /* width: 80vw; */
+    height: 252px;
+    padding: 0px 48px;
+    margin: 72px 122px;
+    font-size: 14px;
+  }
+  
+  .contact {
+    padding: 20px 0px;
+  }
+  
+  .footer-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  footer .footer-contain div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  footer .contact a:nth-child(1) {
+    font-size: 16px;
+  }
+  
+  a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  footer span {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-contain div select {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    width: 125px;
+    height: 32px;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .sec1-media > img {
+      height: 360px;
+    }
+  
+    .sec1-media > video {
+      height: 195px;
+      top: 76px;
+      left: 65px;
+    }
+  
+    .sec2-media > img {
+      height: 360px;
+    }
+  
+    .sec3-media > img {
+      height: 360px;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .nav {
+      width: 100vw;
+    }
+  
+    .but_sign-in {
+      margin: 0px 30px;
+    }
+  
+    .netflix-logo {
+      margin: 0px 30px;
+    }
+  
+    .section {
+      width: 96vw;
+    }
+  
+    .question {
+      width: 96%;
+    }
+  
+    .FAQ {
+      padding: 50px;
+    }
+  
+    footer {
+      padding: 0px 48px;
+      margin: 72px 0px;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .netflix-logo {
+      height: 24px;
+    }
+  
+    .main-background {
+      height: 512px;
+    }
+  
+    .background-img img {
+      height: 512px;
+    }
+  
+    .black-back {
+      height: 512px;
+      box-shadow: 48px 48px 512px inset;
+    }
+  
+    .contains_ele {
+      height: 512px;
+    }
+  
+    .introduction {
+      width: 100vw;
+      height: 424px;
+    }
+  
+    .introduction > div:nth-child(1) {
+      font-size: 32px;
+      font-weight: 600;
+    }
+  
+    .introduction div:nth-child(2) {
+      font-size: 18px;
+    }
+  
+    .email-space > div:first-child {
+      font-size: 18px;
+    }
+  
+    .section {
+      text-align: center;
+      width: 80vw;
+      height: 700px;
+      flex-direction: column-reverse;
+    }
+  
+    .section1 {
+      flex-direction: column;
+    }
+  
+    .section3 {
+      height: 300px;
+    }
+  
+    .sec-disc div:first-child {
+      font-size: 32px;
+      font-weight: 600;
+    }
+  
+    .sec-disc div:nth-child(2) {
+      font-size: 18px;
+    }
+  
+    .question {
+      height: 24px;
+      font-size: 18px;
+    }
+  
+    .question > img {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .FAQ > span {
+      font-size: 32px;
+      font-weight: 600;
+    }
+  
+    .FAQ {
+      height: 854px;
+    }
+  
+    .footer-contain {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  
+    .footer-contain div:nth-child(1) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+  
+    footer {
+      padding: 0px 32px;
+      margin: 32px 0px;
+      height: 380px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .introduction {
+      width: 100vw;
+      height: 392px;
+    }
+  
+    .get-email {
+      width: 70vw;
+      flex-direction: column;
+    }
+  
+    .input-email {
+      height: 48px;
+      width: 100%;
+    }
+  
+    .get-started {
+      width: 156px;
+      height: 48px;
+      font-size: 18px;
+    }
+  
+    .sec1-media > img {
+      height: 240px;
+    }
+  
+    .sec1-media > video {
+      height: 132px;
+      top: 50px;
+      left: 42px;
+    }
+  
+    .sec2-media > img {
+      height: 240px;
+    }
+  
+    .sec3-media > img {
+      height: 240px;
+    }
+  
+    .section {
+      height: 550px;
+    }
+  
+    .section3 {
+      height: 300px;
+    }
+  
+    .card {
+      height: 55px;
+      bottom: 70px;
+    }
+  
+    .card-logo > .logo-card > img {
+      height: 48px;
+    }
+  
+    .download-icon img {
+      height: 48px;
+    }
+  }
+  @media screen and (max-width: 310px) {
+    .nav {
+      width: 100vw;
+      padding: 10px 0px;
+    }
+  
+    .introduction {
+      padding: 10px 0px;
+      width: 100vw;
+    }
+  
+    .main-background {
+      width: 100vw;
+    }
+  
+    .background-img img {
+      width: 100vw;
+    }
+  
+    .black-back {
+      width: 100vw;
+      box-shadow: 48px 48px 512px inset;
+    }
+  
+    .contains_ele {
+      width: 100vw;
+    }
+  
+    .sec1-media > img {
+      height: 144px;
+    }
+  
+    .sec1-media > video {
+      height: 78px;
+      top: 30px;
+      left: 26px;
+    }
+  
+    .sec2-media > img {
+      height: 144px;
+    }
+  
+    .sec3-media > img {
+      height: 144px;
+    }
+  
+    .section {
+      width: 96vw;
+      height: 400px;
+    }
+  
+    .card {
+      height: 35px;
+      bottom: 40px;
+    }
+  
+    .card-logo > .logo-card > img {
+      height: 48px;
+    }
+  
+    .introduction > div:nth-child(1) {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  
+    .introduction div:nth-child(2) {
+      font-size: 14px;
+    }
+  
+    .email-space > div:first-child {
+      font-size: 14px;
+    }
+  
+    .sec-disc div:first-child {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  
+    .sec-disc div:nth-child(2) {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 230px) {
+    .nav {
+      flex-direction: column;
+    }
+  }
+  
